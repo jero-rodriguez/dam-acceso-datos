@@ -1,5 +1,6 @@
 package es.dam.accesodatos.ut02.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,6 +35,7 @@ public class Averia {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "vehiculo_id", nullable = false)
+    @JsonIgnoreProperties(value = "averias", allowSetters = true)
     private Vehiculo vehiculo;
 
     @PrePersist

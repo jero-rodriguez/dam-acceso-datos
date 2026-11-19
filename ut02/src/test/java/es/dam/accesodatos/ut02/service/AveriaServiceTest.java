@@ -20,9 +20,12 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class AveriaServiceTest {
 
-    @Mock private AveriaRepository averiaRepository;
-    @Mock private VehiculoRepository vehiculoRepository;
-    @InjectMocks private AveriaService service;
+    @Mock
+    private AveriaRepository averiaRepository;
+    @Mock
+    private VehiculoRepository vehiculoRepository;
+    @InjectMocks
+    private AveriaService service;
 
     @Test
     void listarAveriasDevuelveTodas() {

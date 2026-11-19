@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 
-/** Traduce errores de integridad de la base de datos a respuestas HTTP útiles. */
+/**
+ * Traduce errores de integridad de la base de datos a respuestas HTTP útiles.
+ */
 @RestControllerAdvice
 public class ApiExceptionHandler {
 
